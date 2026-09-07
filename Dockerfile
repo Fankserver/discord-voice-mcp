@@ -21,7 +21,7 @@ RUN CGO_ENABLED=1 go build -ldflags '-w -s' \
     -o discord-voice-mcp ./cmd/discord-voice-mcp
 
 # Final stage
-FROM alpine:3.23
+FROM alpine:3.24
 
 # Install opus runtime library (required for dynamic linking)
 # hadolint ignore=DL3018
